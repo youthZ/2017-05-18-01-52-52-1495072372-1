@@ -42,7 +42,7 @@ class Sequence {
 		for(var i = 0; i < array.length-1; i++){
 			sum+=array[i];
 		} 
-		avg = parseFloat(sum) / parseFloat(array.length);
+		avg = (parseFloat(sum) / parseFloat(array.length)).toFixed(2);
 		return avg;
 	}
 }
