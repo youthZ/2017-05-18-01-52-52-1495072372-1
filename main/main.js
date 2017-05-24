@@ -1,9 +1,9 @@
 module.exports = function main() {
     let sequence = new Sequence([6, 9, 15, -2, 92, 11]);
-    console.log(`o) 最小值 = ${sequence.minimum()};
-					最大值 = ${sequence.maxmum()};
-	                元素数量 = ${sequence.total()};
-					平均值 = ${sequence.average()};
+    console.log(`o) 最小值 = ${sequence.minimum()}
+					最大值 = ${sequence.maxmum()}
+	                元素数量 = ${sequence.total()}
+					平均值 = ${sequence.average()}
 	`);
 };
 
@@ -39,11 +39,11 @@ class Sequence {
 	average(){
 		var array=this.input;
 		var sum= 0.0;
-		var avg = 0.0;
+		var avg ;
 		for(var i = 0; i < array.length-1; i++){
 			sum+=array[i];
 		} 
-		avg = sum/array.length;
+		avg = (sum/array.length).toFixed(2);
 		return avg;
 	}
 }
