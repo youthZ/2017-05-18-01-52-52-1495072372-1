@@ -1,9 +1,9 @@
 module.exports = function main() {
     let sequence = new Sequence([6, 9, 15, -2, 92, 11]);
     console.log(`o) 最小值 = ${sequence.minimum()}
-					最大值 = ${sequence.maxmum()}
-	                元素数量 = ${sequence.total()}
-					平均值 = ${sequence.average()}`);
+				 o) 最大值 = ${sequence.maxmum()}
+	             o) 元素数量 = ${sequence.total()}
+				 o)	平均值 = ${sequence.average()}`);
 };
 
 class Sequence {
