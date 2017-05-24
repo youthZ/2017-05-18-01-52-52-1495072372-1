@@ -1,9 +1,10 @@
 module.exports = function main() {
     let sequence = new Sequence([6, 9, 15, -2, 92, 11]);
-    console.log(`o) 最小值 = ${sequence.minimum()}`);
-	console.log(`o) 最大值 = ${sequence.maxmum()}`);
-	console.log(`o) 元素数量 = ${sequence.total()}`);
-	console.log(`o) 平均值 = ${sequence.average()}`);
+    console.log(`o) 最小值 = ${sequence.minimum()};
+	console.log(`o) 最大值 = ${sequence.maxmum()};
+	console.log(`o) 元素数量 = ${sequence.total()};
+	console.log(`o) 平均值 = ${sequence.average()};
+	`);
 };
 
 class Sequence {
@@ -42,7 +43,7 @@ class Sequence {
 		for(var i = 0; i < array.length-1; i++){
 			sum+=array[i];
 		} 
-		avg = (parseFloat(sum) / parseFloat(array.length)).toFixed(2);
+		avg = sum/array.length;
 		return avg;
 	}
 }
