@@ -38,8 +38,8 @@ class Sequence {
 
 	average(){
 		var array=this.input;
-		var sum= 0;
-		var avg = 0;
+		var sum= 0.0;
+		var avg = 0.0;
 		for(var i = 0; i < array.length-1; i++){
 			sum+=array[i];
 		} 
