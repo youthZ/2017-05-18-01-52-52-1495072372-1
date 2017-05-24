@@ -3,8 +3,7 @@ module.exports = function main() {
     console.log(`o) 最小值 = ${sequence.minimum()}
 					最大值 = ${sequence.maxmum()}
 	                元素数量 = ${sequence.total()}
-					平均值 = ${sequence.average()}
-	`);
+					平均值 = ${sequence.average()}`);
 };
 
 class Sequence {
@@ -40,7 +39,7 @@ class Sequence {
 		var array=this.input;
 		var sum= 0.0;
 		var avg ;
-		for(var i = 0; i < array.length-1; i++){
+		for(var i = 0; i < array.length; i++){
 			sum+=array[i];
 		} 
 		avg = (sum/array.length).toFixed(2);
